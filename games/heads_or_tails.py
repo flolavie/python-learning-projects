@@ -27,60 +27,65 @@ print(wlcm_msg)
 #=======================
 #Language selection part (Not yet implemented)
 #=======================
-"""
-print("Please, select your language :\n- English : Type 'en'\n- Français : Tapez 'fr'")
+def select_language():
+    print("Please, select your language :\n- English : Type 'en'\n- Français : Tapez 'fr'")
 
-language = input("Language -> ")
+    language = input("Language -> ")
 
-if language == "fr":
-    print("\n✔ Vous avez sélectionné le Français.\n")
-elif language == "en":
+    if language == "fr":
+        print("\n✔ Vous avez sélectionné le Français.\n")
+        play_fr()
+    elif language == "en":
         print("\n✔ You selected English\n")
-else:
-    print("\n/!\ Error, language not available. /!\ \n")
-"""
+        play_en()
+    else:
+        print("\n/!\ Error, language not available. /!\ \n")
+        select_language()
+
 
 #=========================
 #Game part - The real deal
 #=========================
 
 # ENGLISH
-print("Choose your side!")
-choice = input("'Heads' or 'Tails'? -> ")
-win_value = random.randint(0, 1)
-coin_txt = ("Heads", "Tails")
-win_msg = "Coingratulations, you chose {} and the coin landed on {}!"
-lose_msg = "Oh no.. The coin landed on {}!"
+def play_en():
+    print("Choose your side!")
+    choice = input("'Heads' or 'Tails'? -> ")
+    win_value = random.randint(0, 1)
+    coin_txt = ("Heads", "Tails")
+    win_msg = "Coingratulations, you chose {} and the coin landed on {}!"
+    lose_msg = "Oh no.. The coin landed on {}!"
 
-if str.upper(choice) == "TAILS":
-    sel_value=1
-else:
-    sel_value=0
+    if str.upper(choice) == "TAILS":
+        sel_value=1
+    else:
+        sel_value=0
 
-if sel_value == win_value:
-    print(win_msg.format(coin_txt[sel_value],coin_txt[win_value]))
-else:
-    print(lose_msg.format(coin_txt[win_value]))
+    if sel_value == win_value:
+        print(win_msg.format(coin_txt[sel_value],coin_txt[win_value]))
+    else:
+        print(lose_msg.format(coin_txt[win_value]))
 
 # FRENCH
-"""
-print("Faites votre choix !")
-choice = input("'Pile' ou 'Face' ? -> ")
-win_value = random.randint(0, 1)
-coin_txt = ("Pile", "Face")
-win_msg = "Félicitations, vous avez choisi {} et la pièce est tombée sur {} !"
-lose_msg = "Mince, la pièce est tombée sur {} !"
+def play_fr():
+    print("Faites votre choix !")
+    choice = input("'Pile' ou 'Face' ? -> ")
+    win_value = random.randint(0, 1)
+    coin_txt = ("Pile", "Face")
+    win_msg = "Félicitations, vous avez choisi {} et la pièce est tombée sur {} !"
+    lose_msg = "Mince, la pièce est tombée sur {} !"
 
-if str.upper(choice) == "FACE":
-    sel_value=1
-else:
-    sel_value=0
+    if str.upper(choice) == "FACE":
+        sel_value=1
+    else:
+        sel_value=0
 
-if sel_value == win_value:
-    print(win_msg.format(coin_txt[sel_value],coin_txt[win_value]))
-else:
-    print(lose_msg.format(coin_txt[win_value]))
-"""
+    if sel_value == win_value:
+        print(win_msg.format(coin_txt[sel_value],coin_txt[win_value]))
+    else:
+        print(lose_msg.format(coin_txt[win_value]))
+
+select_language()
 
 #DEBUG
 """

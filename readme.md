@@ -5,11 +5,11 @@
 [![Version](https://img.shields.io/badge/tested_version-3.6+-informational)](https://www.python.org/downloads/)
 [![GPL-3.0-or-later](https://img.shields.io/badge/License-GPL_v3.0_or_later-yellow.svg)](https://opensource.org/licenses/) 
 
-This repositeroy contains all my small games and projects that I'm creating while learning Python. Feel free to use, edit and share them as you wish !
+This repository contains all my small games and projects that I'm creating while learning Python. Feel free to use, edit and share them as you wish!
 
 Keep in mind that I'm still learning... \
-You may find bugs, glitches, unoptimised code in my projects. These games and small projects are intended just to work, I'm trying to think of ways to code these games and will be working on optimisation, features and fixes later to train myself on using Git aswell !  
-Feel free to report issues and help solving them but try to only do it on code that corresponds to your level
+You may find bugs, glitches, unoptimized code in my projects. These games and small projects are intended just to work, I'm trying to think of ways to code these games and will be working on optimizing, features and fixes later to train myself on using Git as well!  
+Feel free to report issues and help solving them, but try to only do it in code that corresponds to your skill level.
 
 
 
