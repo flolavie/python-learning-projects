@@ -25,7 +25,7 @@ Credits & Thanks
 print(wlcm_msg)
 
 #=======================
-#Language selection part (Not yet implemented)
+#Language selection part
 #=======================
 def select_language():
     print("Please, select your language :\n- English : Type 'en'\n- Français : Tapez 'fr'")
